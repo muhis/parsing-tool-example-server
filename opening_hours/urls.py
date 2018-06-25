@@ -22,5 +22,6 @@ from main.views import OpeningHours
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
+    path('opening-hours/', OpeningHours.as_view()),
 ]
 urlpatterns = format_suffix_patterns(urlpatterns)
