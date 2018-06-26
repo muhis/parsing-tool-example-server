@@ -17,11 +17,12 @@ from django.contrib import admin
 from django.urls import include, path
 from rest_framework.urlpatterns import format_suffix_patterns
 
-from main.views import OpeningHours
+from main.views import OpeningHours, opening_hours_string
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
     path('opening-hours/', OpeningHours.as_view()),
+    path('opening-hours-string', opening_hours_string)
 ]
 urlpatterns = format_suffix_patterns(urlpatterns)
