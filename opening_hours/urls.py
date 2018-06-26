@@ -23,6 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
     path('opening-hours/', OpeningHours.as_view()),
-    path('opening-hours-string', opening_hours_string)
+    path('opening-hours-string/', opening_hours_string)
 ]
 urlpatterns = format_suffix_patterns(urlpatterns)
