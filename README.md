@@ -1,8 +1,25 @@
 # Introduction:
 Simple Django project to showcase the library parsing_tools.
 
-# Minimum requirements:
-The server responds to two urls:
+# Installation:
+- git clone https://github.com/muhis/parsing-tool-example-server
+- create and start a a virtual environment
+```sh
+python -m venv
+```
+- source env/bin/activate
+- Install the project dependencies:
+```sh
+pip install -r requirements.txt
+```
+- Migrate DB
+```sh
+python manage.py migrate
+```
+- Run server
+```sh
+python manage.py runserver
+```
 
 # Test links
 ## '/opening-hours/'
